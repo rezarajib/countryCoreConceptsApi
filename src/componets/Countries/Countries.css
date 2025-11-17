@@ -23,3 +23,34 @@
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
 }
+.totalCountry {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  width: fit-content;
+  border: 1px solid #e2e8f0;
+}
+
+.totalCountry ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.totalCountry li {
+  font-size: 1.05rem;
+  padding: 6px 0;
+  color: #0f172a;
+  border-bottom: 1px solid #e2e8f0;
+  transition: 0.2s;
+}
+
+.totalCountry li:last-child {
+  border-bottom: none;
+}
+
+.totalCountry li:hover {
+  color: #2563eb;
+  padding-left: 6px;
+}

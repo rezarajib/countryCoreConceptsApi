@@ -17,7 +17,7 @@ const Countries = ({promiseCountries}) => {
      <div>
         <h1>This is All Api Ai data For Country :  {countries.length}</h1>
         <h2 className='travling-s0-far'>Traveling so far ::{visitedCountries.length}</h2>
-        <ol>
+        <ol className='totalCountry'>
             {
                 visitedCountries.map(country => <li>{country.name.common}</li>)
             }
