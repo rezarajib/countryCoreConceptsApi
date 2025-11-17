@@ -9,7 +9,7 @@ const Country = ({ country }) => {
         setVisited (true);
     }
     return (
-        <div className='country'>
+        <div className={`country ${visited && 'country-visited'}`}>
             <h2>Country Name: {country.name.common}</h2>
 
             {/* h2 er niche flag image */}
@@ -23,7 +23,7 @@ const Country = ({ country }) => {
             <p><strong>Capital:</strong> {country.capital?.[0] || "No Capital"}</p>
             <p><strong>Region:</strong> {country.region}</p>
             <p><strong>Population:</strong> {country.population}</p>
-            <button onClick={handleBtn}> {
+            <button className='country-visited' onClick={handleBtn}> {
                 visited ? 'visited' : 'Not Visited'
                 } </button>
         </div>
